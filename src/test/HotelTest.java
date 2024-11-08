@@ -19,20 +19,20 @@ public class HotelTest {
     }
 
     @Test
-    public void testRegisterApartment() {
+    public void registerApartment() {
         hotel.registerApartment(1, 100.0);
         assertNotNull(hotel.getApartment(1));
     }
 
     @Test
-    public void testReserveApartment() {
+    public void reserveApartment() {
         hotel.registerApartment(1, 100.0);
         assertTrue(hotel.reserveApartment(1, "John Doe"));
         assertEquals("John Doe", hotel.getApartment(1).getClientName());
     }
 
     @Test
-    public void testReleaseReservation() {
+    public void releaseReservation() {
         hotel.registerApartment(1, 100.0);
         hotel.reserveApartment(1, "John Doe");
         assertTrue(hotel.releaseReservation(1));
@@ -40,7 +40,7 @@ public class HotelTest {
     }
 
     @Test
-    public void testListAvailableApartments() {
+    public void listAvailableApartments() {
         hotel.registerApartment(1, 100.0);
         hotel.registerApartment(2, 150.0);
         hotel.reserveApartment(1, "John Doe");
