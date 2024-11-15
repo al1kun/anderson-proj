@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +29,7 @@ jobs:
         run: mvn test
 
       - name: Upload JAR artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: project-jar
           path: target/*.jar
