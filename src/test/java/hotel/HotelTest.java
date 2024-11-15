@@ -1,8 +1,5 @@
-package test;
+package hotel;
 
-import hotel.Apartment;
-import hotel.ApartmentStatus;
-import hotel.Hotel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
